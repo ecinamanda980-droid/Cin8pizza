@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PizzaKu - Fresh & Hot</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff5f0;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #d32f2f;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1601924582975-7d43d2fbb8cb') center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 40px;
+}
+
+/* PRODUCT */
+.container {
+  padding: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.price {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+.btn {
+  background: #ff9800;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <b>🍕 PizzaKu</b>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Kontak</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Pizza Fresh & Lezat 🔥</h1>
+  <p>Pesan sekarang, hangat sampai rumah!</p>
+</div>
+
+<!-- PRODUCT -->
+<div class="container">
+  <h2>Menu Favorit</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e">
+      <div class="card-content">
+        <h4>Pepperoni</h4>
+        <p class="price">Rp 85.000</p>
+        <a href="#" class="btn">Pesan</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953c">
+      <div class="card-content">
+        <h4>Cheese Melt</h4>
+        <p class="price">Rp 75.000</p>
+        <a href="#" class="btn">Pesan</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+      <div class="card-content">
+        <h4>Spicy Pizza</h4>
+        <p class="price">Rp 90.000</p>
+        <a href="#" class="btn">Pesan</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
